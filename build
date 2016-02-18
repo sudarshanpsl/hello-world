@@ -1,4 +1,4 @@
 #!/bin/sh
 rm hello
 $CC -o hello hello.c
-if [ "$(./hello)" = "Hello world!" ]; then echo "successful"; return 0; else echo "unsuccessful"; return 1; fi
+if [ "$(./hello)" = "Hello world!" ]; then echo "successful"; exit 0; else echo "unsuccessful"; exit 1; fi
