@@ -1,4 +1,5 @@
 language: c
+os: osx
 script: ./build
 compiler:
   - clang
