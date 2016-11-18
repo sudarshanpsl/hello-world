@@ -1,6 +1,5 @@
 language: c
 sudo: false
-os: osx
 script: ./build
 compiler:
   - clang
