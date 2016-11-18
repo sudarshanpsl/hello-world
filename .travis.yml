@@ -1,7 +1,10 @@
 language: c
 sudo: false
 
-os: osx
+os:
+ - osx
+ - linux
+ 
 compiler:
   - clang
   - gcc
