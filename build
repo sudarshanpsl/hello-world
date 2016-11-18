@@ -1,6 +1,5 @@
 #!/bin/bash
-set -vx
-set -euo pipefail
+
 file $(which $CC)
 uname -a
 rm -f hello
