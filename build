@@ -1,5 +1,5 @@
 #!/bin/sh
 uname -a
-rm hello
+rm -f hello
 $CC -o hello hello.c
 if [ "$(./hello)" = "Hello world!" ]; then echo "successful"; exit 0; else echo "unsuccessful"; exit 1; fi
