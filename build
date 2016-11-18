@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+set -vx
+set -euo pipefail
 uname -a
 rm -f hello
 $CC -o hello hello.c
