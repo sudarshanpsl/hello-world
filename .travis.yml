@@ -2,7 +2,6 @@ language: c
 sudo: false
 
 os:
- - osx
  - linux
  
 compiler:
