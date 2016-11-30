@@ -3,4 +3,3 @@ sudo: required
 script: ./build
 compiler:
   - gcc
-  - clang
