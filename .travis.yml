@@ -3,4 +3,3 @@ sudo: false
 script: ./build
 compiler:
   - gcc
-  - clang
