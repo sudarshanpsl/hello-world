@@ -2,5 +2,4 @@ language: c
 sudo: false
 script: ./build
 compiler:
-  - clang
   - gcc
