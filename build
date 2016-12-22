@@ -1,6 +1,10 @@
 #!/bin/bash
 
-file $(which $CC)
+if [[ "x$CC" == x ]]; then
+  CC=cc
+fi
+
+#file $(which $CC)
 uname -a
 rm -f hello
 $CC -o hello hello.c
