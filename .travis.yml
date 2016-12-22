@@ -1,6 +1,6 @@
 language: c
 sudo: required
-script: ./build
+script: bash ./script.sh
 compiler:
   - gcc
 services:
