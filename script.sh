@@ -5,7 +5,5 @@ if [[ $(uname -m) == "ppc64le" ]]; then
   sudo apt-get install -y --force-yes docker.io
 fi
 
-
-  docker build -t test -f Dockerfile.`uname -m` .
-  docker run -i -v $(pwd):/source2 --rm test
-
+docker build -t test -f Dockerfile.`uname -m` .
+docker run -i -v $(pwd):/source2 --rm test
