@@ -1,7 +1,11 @@
 #!/bin/bash
 if [[ $(uname -m) == "ppc64le" ]]; then
-  ./build
-else
+  echo 'deb http://ftp.unicamp.br/pub/ppc64el/ubuntu/14_04/docker-1.6.2-ppc64el/ trusty main' | sudo tee /etc/apt/sources.list.d/trusty-docker.list\
+  sudo apt update
+  sudo apt install -y --force-yes docker.io
+fi
+
+
   docker build -t test -f Dockerfile.`uname -m` .
   docker run -i -v $(pwd):/source2 --rm test
-fi
+
