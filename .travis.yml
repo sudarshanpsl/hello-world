@@ -1,7 +1,5 @@
-language: c
+language: minimal
 sudo: required
 services:
  - docker
 script: bash ./script.sh
-compiler:
-  - gcc
