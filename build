@@ -8,4 +8,4 @@ fi
 uname -a
 rm -f hello
 $CC -o hello hello.c
-if [ "$(./hello)" = "Hello world! - Sud" ]; then echo "successful"; exit 0; else echo "unsuccessful"; exit 1; fi
+if [ "$(./hello)" = "Hello world! - Sud" ]; then echo "successful - Sud"; exit 0; else echo "unsuccessful- Sud"; exit 1; fi
